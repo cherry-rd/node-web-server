@@ -58,6 +58,13 @@ app.get('/about', (req, res) => {
     });
 });
 
+// projects route
+app.get('/projects', (req, res) => {
+    res.render('projects', {
+        pageTitle: 'Projects'
+    });
+});
+
 // bad route
 app.get('/bad', (req, res) => {
     res.send({
